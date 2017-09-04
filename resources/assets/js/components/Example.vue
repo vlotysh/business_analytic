@@ -6,7 +6,10 @@
                     <div class="panel-heading">Example Component</div>
 
                     <div class="panel-body">
-                        I'm an example component! 121412
+                        I'm an example component! Test!!!
+                    </div>
+                    <div id="black-div">
+                        BLACK DIV
                     </div>
                 </div>
             </div>

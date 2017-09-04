@@ -14397,6 +14397,9 @@ if (typeof jQuery === 'undefined') {
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ exports["default"] = {
     mounted: function mounted() {
@@ -41801,7 +41804,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "panel-heading"
   }, [_vm._v("Example Component")]), _vm._v(" "), _c('div', {
     staticClass: "panel-body"
-  }, [_vm._v("\n                    I'm an example component! 121412\n                ")])])])])])
+  }, [_vm._v("\n                    I'm an example component! Test!!!\n                ")]), _vm._v(" "), _c('div', {
+    attrs: {
+      "id": "black-div"
+    }
+  }, [_vm._v("\n                    BLACK DIV\n                ")])])])])])
 }]}
 if (false) {
   module.hot.accept()
