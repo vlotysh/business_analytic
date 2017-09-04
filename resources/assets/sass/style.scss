@@ -1,0 +1,92 @@
+.pagination {
+  margin-top: 0 !important;
+}
+
+.dataTables_info {
+  margin-top: 10px;
+}
+
+#table__watermark-whitelist tr td i {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+#admins tbody tr td:last-child {
+  text-align: center;
+}
+
+.block-button {
+  display: block;
+}
+
+.data-table-block {
+  position: relative;
+}
+
+.breadcrumb {
+  .router-link-exact-active {
+    color: #777;
+    pointer-events: none;
+  }
+}
+
+#black-div {
+  background-color: black;
+  border: 5px solid green;
+  width: 100%;
+  color: white;
+}
+
+
+html, body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  height: 100vh;
+  margin: 0;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 84px;
+}
+
+.links > a {
+  color: #636b6f;
+  padding: 0 25px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
