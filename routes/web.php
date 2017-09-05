@@ -18,3 +18,4 @@ Route::get('/', function () {
 Route::get('login', ['as' => 'login', 'uses' => '\App\Http\Controllers\Auth\LoginController@getView']);
 
 Route::get('register', ['as' => 'register', 'uses' => '\App\Http\Controllers\Auth\RegisterController@getView']);
+Route::post('register', ['as' => 'register', 'uses' => '\App\Http\Controllers\Auth\RegisterController@createUser']);
