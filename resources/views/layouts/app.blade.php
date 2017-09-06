@@ -1,4 +1,5 @@
-<!doctype html>
+
+        <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="utf-8">
@@ -17,11 +18,13 @@
         <div class="top-right links">
             @auth
             <a href="{{ url('/home') }}">Home</a>
+            <a href="{{ route('logout') }}">Logout</a>
             @else
                 <a href="{{ route('login') }}">Login</a>
                 <a href="{{ route('register') }}">Register</a>
                 @endauth
         </div>
+
     @endif
 
     <div class="content" id="app">
@@ -29,7 +32,7 @@
         @yield('content')
     </div>
 
-     <script src="/js/app.js"></script>
+    <script src="/js/app.js"></script>
 </div>
 </body>
 </html>

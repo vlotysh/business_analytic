@@ -15,7 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('login', ['as' => 'login', 'uses' => '\App\Http\Controllers\Auth\LoginController@getView']);
+Auth::routes();
+
+Route::get('login', ['as' => 'login', 'uses' => '\App\Http\Controllers\Auth\AuthController@getView']);
+Route::get('logout', ['as' => 'logout', 'uses' => '\App\Http\Controllers\Auth\AuthController@logout']);
+Route::post('login', ['as' => 'login', 'uses' => '\App\Http\Controllers\Auth\AuthController@login']);
+
 
 Route::get('register', ['as' => 'register', 'uses' => '\App\Http\Controllers\Auth\RegisterController@getView']);
 Route::post('register', ['as' => 'register', 'uses' => '\App\Http\Controllers\Auth\RegisterController@createUser']);
+
+
+
+Route::get('/home', 'HomeController@index')->name('home');
